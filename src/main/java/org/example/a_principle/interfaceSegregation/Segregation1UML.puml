@@ -1,0 +1,33 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class A
+class B
+class C
+class D
+
+interface Interface1{
+
+operator1():void
+operator2():void
+operator3():void
+operator4():void
+operator5():void
+
+}
+
+B ..|> Interface1
+D ..|> Interface1
+
+A ...> Interface1
+C ...> Interface1
+
+note top of A
+1>A通过Interface1会依赖（使用）B
+2>但是A中只会使用到接口的operator1，operator2，operator3三个方法
+end note
+note top of C
+1>C通过Interface1会依赖（使用）D
+2>但是A中只会使用到接口的operator1，operator4，operator5三个方法
+end note
+@enduml
