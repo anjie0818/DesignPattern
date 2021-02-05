@@ -31,7 +31,7 @@ class B extends Base {
     //如果B需要A的方法，使用组合关系
     private A a = new A();
 
-    //这里重写A类的方法，可能是无意识的
+    
     public int func1(int num1, int num2) {
         return num1 + num2;
     }
