@@ -80,7 +80,9 @@ https://plantuml.com/zh/class-diagram
     * 方法中使用到
 * 泛化（generalization）
     * 实际上就是继承，它是依赖关系的特例
+![](./images/继承.png)
 * 实现（implementation）
+![](./images/实现.png)
 * 关联（association）
     * 类与类之间的联系，依赖关系的特例
         * 单向一对一
@@ -88,8 +90,10 @@ https://plantuml.com/zh/class-diagram
 * 聚合（aggregation）
     * 整体和部分的关系，整体和部分是可以分开
     * 是关联关系的特例
+![](./images/聚合.png)
 * 组合（composition）
     * 整体和部分的关系，整体和部分是不可分开的
+![](./images/组合.png)
 
 
 ## 4.设计模式概述
