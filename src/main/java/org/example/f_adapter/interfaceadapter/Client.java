@@ -12,6 +12,7 @@ public class Client {
         };
         absAdapter.m1();
 
+
 //        如果直接实现接口需要实现所有的抽象方法
 //        Interface4 i = new Interface4() {
 //            public void m1() {
