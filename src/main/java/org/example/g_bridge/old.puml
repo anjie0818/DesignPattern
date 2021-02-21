@@ -1,0 +1,46 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class Phone{
+call():void
+}
+class Folder{
+call():void
+}
+class UpRight{
+call():void
+}
+class Silde{
+call():void
+}
+class XiaoMi1{
+call():void
+}
+class XiaoMi2{
+call():void
+}
+class XiaoMi3{
+call():void
+}
+class HuaWei1{
+call():void
+}
+class HuaWei2{
+call():void
+}
+class HuaWei3{
+call():void
+}
+Phone <|--- Folder
+Phone <|--- UpRight
+Phone <|--- Silde
+
+Folder <|--- XiaoMi1
+Folder <|--- HuaWei1
+
+UpRight <|--- XiaoMi2
+UpRight <|--- HuaWei2
+
+Silde <|--- XiaoMi3
+Silde <|--- HuaWei3
+@enduml

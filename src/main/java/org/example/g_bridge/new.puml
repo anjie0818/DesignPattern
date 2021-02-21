@@ -1,0 +1,44 @@
+@startuml
+'https://plantuml.com/class-diagram
+class Client
+
+interface Brand{
+    open():void
+    call():void
+    close():void
+}
+class ViVo{
+    open():void
+    call():void
+    close():void
+}
+class XiaoMi{
+    open():void
+    call():void
+    close():void
+}
+abstract class Phone{
+    brand:Brand
+    open():void
+    call():void
+    close():void
+}
+class UpRightPhone{
+    open():void
+    call():void
+    close():void
+}
+class FoldedPhone{
+    open():void
+    call():void
+    close():void
+}
+Brand <|.. XiaoMi
+Brand <|.. ViVo
+Phone o- Brand
+Phone <|-- UpRightPhone
+Phone <|-- FoldedPhone
+Client -> Phone
+Client -> Brand
+
+@enduml
